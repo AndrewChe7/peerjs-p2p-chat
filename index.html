@@ -1,21 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<!-- initialize material design icons and materialize css -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
 </head>
 <body>
+	<nav>
+		<div class="nav-wrapper">
+			<ul class="right">
+        <li><a href="#" onclick="process.exit();"><b><i class="material-icons red-text text-darken-4">exit_to_app</i></b></a></li>
+      </ul>
+		</div>
+	</nav>
 
-	<script type="text/javascript" src="http://cdn.peerjs.com/0.3/peer.min.js"></script>
+	<div class="container">
+		<div class="row">
 
-	<div id="output" class="output">
+		</div>
 	</div>
-	<div id="input">
-		<input type="text" id="input_field">
-		<button id="send">send</button>
-	</div>
 
 
+	<!-- initialize jquery, peerjs and materialize -->
 
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/materialize.min.js"></script>
+	<script type="text/javascript" src="js/peer.min.js"></script>
 	<script type="text/javascript" src="chat.js"></script>
 </body>
 </html>

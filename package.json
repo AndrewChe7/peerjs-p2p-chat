@@ -11,7 +11,7 @@
     "frame": false,
     "width": 800,
     "height": 500,
-    "position": "center",
+    "position": "mouse",
     "min_width": 400,
     "min_height": 200,
     "max_width": 800,
