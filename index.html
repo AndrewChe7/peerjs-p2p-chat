@@ -18,7 +18,32 @@
 
 	<div class="container">
 		<div class="row">
-			
+			<div class="col s3">
+				<div id="friends" class="collection" style="height:250px; overflow:auto;">
+					<!-- connected users -->
+					<a href="#!" class="collection-item">User 1</a>
+					<a href="#!" class="collection-item">User 2</a>
+					<a href="#!" class="collection-item">User 3</a>
+					<a href="#!" class="collection-item">User 4</a>
+				</div>
+			</div>
+			<div class="col s9">
+				<!-- output window -->
+				<div class="card" style="height:250px">
+					<div id="chat-window" class="card-content" style="height:100%">
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="input-field col s7 offset-s3">
+				<input id="input" type="text">
+				<label for="input"></label>
+			</div>
+			<div class="col s2">
+				<a id="send-button" class="waves-effect waves-light btn">send</a>
+			</div>
 		</div>
 	</div>
 
