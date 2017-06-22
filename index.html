@@ -4,45 +4,49 @@
 	<!-- initialize material design icons and materialize css -->
 	<link href="css/iconfont/material-icons.css" rel="stylesheet"/>
 	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	<link type="text/css" rel="stylesheet" href="css/mainstyle.css"  media="screen,projection"/>
+
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
 </head>
 <body>
 	<nav>
-		<div class="nav-wrapper">
+		<div class="nav-wrapper green">
+			<a class="brand-logo left"><b><i class="material-icons white-text">chat</i></b></a>
+			<div class="toolbar-drag"></div>
 			<ul class="right">
-        <li><a href="#" onclick="process.exit();"><b><i class="material-icons red-text text-darken-4">exit_to_app</i></b></a></li>
+        <li><a href="#" id="fullscreen"><b><i id="fs" class="material-icons white-text">fullscreen</i></b></a></li>
+        <li><a href="#" id="exit"><b><i class="material-icons white-text">exit_to_app</i></b></a></li>
       </ul>
 		</div>
+
 	</nav>
 
 	<div class="container">
 		<div class="row">
 			<div class="col s3">
-				<div id="friends" class="collection" style="height:250px; overflow:auto;">
-					<!-- connected users -->
-					<a href="#!" class="collection-item">User 1</a>
-					<a href="#!" class="collection-item">User 2</a>
-					<a href="#!" class="collection-item">User 3</a>
-					<a href="#!" class="collection-item">User 4</a>
-				</div>
+				<br/>
+				<p><b>Your ID is:</b><input id="myID" type="text" value="none" disabled/></p>
+				<a id="connect" class="waves-effect green waves-light btn" onclick="">connect</a>
+				<input placeholder="Your friend's ID is:" id="connect-id" type="text"/>
+
 			</div>
 			<div class="col s9">
 				<!-- output window -->
 				<div class="card" style="height:250px">
 					<div id="chat-window" class="card-content" style="height:100%">
-						
+
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="row">
 			<div class="input-field col s7 offset-s3">
-				<input id="input" type="text">
+				<textarea id="input" class="materialize-textarea"></textarea>
 				<label for="input"></label>
 			</div>
 			<div class="col s2">
-				<a id="send-button" class="waves-effect waves-light btn">send</a>
+				<a id="send-button" class="green waves-effect waves-light btn">send</a>
 			</div>
 		</div>
 	</div>
@@ -51,7 +55,7 @@
 	<!-- initialize jquery, peerjs and materialize -->
 
 	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-	<script type="text/javascript" src="js/materialize.min.js"></script>
+	<script type="text/javascript" src="js/materialize.js"></script>
 	<script type="text/javascript" src="js/peer.min.js"></script>
 	<script type="text/javascript" src="chat.js"></script>
 </body>

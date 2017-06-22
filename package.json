@@ -1,21 +1,18 @@
 {
   "main": "index.html",
-  "name": "Chat",
+  "name": "andrewchechat",
   "description": "Simple chat by AndrewChe",
-  "version": "0.0.1",
+  "version": "v1.0.0",
   "keywords": [ "AndrewChe", "Chat" ],
   "window": {
     "title": "Chat",
-    "icon": "link.png",
+    "icon": "icon.png",
     "toolbar": true,
     "frame": false,
     "width": 800,
     "height": 500,
     "position": "center",
-    "min_width": 400,
-    "min_height": 200,
-    "max_width": 800,
-    "max_height": 600
+    "resizable" : false
   },
   "webkit": {
     "plugin": true

@@ -3133,9 +3133,9 @@ if (jQuery) {
       $textarea.data("previous-length", $textarea.val().length);
     });
 
-    $('body').on('keyup keydown autoresize', text_area_selector, function () {
+    /*$('body').on('keyup keydown autoresize', text_area_selector, function () {
       textareaAutoResize($(this));
-    });
+    });*/
 
     // File Input Path
     $(document).on('change', '.file-field input[type="file"]', function () {
