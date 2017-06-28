@@ -2,7 +2,7 @@
   "main": "index.html",
   "name": "andrewchechat",
   "description": "Simple chat by AndrewChe",
-  "version": "v1.0.0",
+  "version": "0.0.1",
   "keywords": [ "AndrewChe", "Chat" ],
   "window": {
     "title": "Chat",
