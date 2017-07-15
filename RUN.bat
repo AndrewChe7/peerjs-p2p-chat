@@ -1,1 +1,0 @@
-"..\nwjs\nw.exe" "..\chat_peerjs"
